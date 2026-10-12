@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avrilistianto Ananda Nabil - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#09090b', /* Zinc 950 - Hitam pekat modern */
+                        cardbg: '#18181b', /* Zinc 900 */
+                        primary: '#d97706', /* Amber 600 - Warna hangat matching jaket */
+                        primaryHover: '#b45309' /* Amber 700 */
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Efek glow untuk foto */
+        .photo-glow {
+            box-shadow: 0 0 40px -10px rgba(217, 119, 6, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-darkbg text-zinc-300 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/80 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-white tracking-tight">Avrilistianto<span class="text-primary">.dev</span></a>
+            <nav class="hidden md:flex space-x-10 text-sm font-medium text-zinc-400">
+                <a href="#about" class="hover:text-white transition">Tentang</a>
+                <a href="#skills" class="hover:text-white transition">Keahlian</a>
+                <a href="#projects" class="hover:text-white transition">Proyek</a>
+                <a href="#contact" class="hover:text-white transition">Kontak</a>
+            </nav>
+            <a href="https://github.com/Avrlst" target="_blank" class="px-5 py-2.5 text-sm font-semibold border border-zinc-700 hover:bg-zinc-800 rounded-full transition text-white flex items-center gap-2">
+                GitHub <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Foto & Teks) -->
+    <section class="min-h-screen flex items-center pt-24 pb-12 px-6">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Bagian Teks Kiri -->
+            <div class="order-2 lg:order-1 flex flex-col justify-center text-center lg:text-left">
+                <div class="inline-block mx-auto lg:mx-0 mb-6 px-4 py-1.5 text-sm font-semibold bg-zinc-800 border border-zinc-700 text-zinc-300 rounded-full w-max">
+                    <i class="fas fa-code text-primary mr-2"></i> IT Student & Web Developer
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Halo, Saya <br/>
+                    <span class="bg-gradient-to-r from-amber-200 to-amber-500 bg-clip-text text-transparent">Avrilistianto Ananda.</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-zinc-400 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Mahasiswa Teknologi Informasi yang berfokus pada pengembangan aplikasi web, perancangan basis data, dan penjaminan kualitas sistem (QA).
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#projects" class="px-8 py-4 bg-primary hover:bg-primaryHover text-white font-semibold rounded-xl transition shadow-lg shadow-amber-900/30">
+                        Lihat Proyek
+                    </a>
+                    <a href="#contact" class="px-8 py-4 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold rounded-xl transition border border-zinc-700">
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bagian Foto Kanan -->
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                    <!-- Bingkai dekorasi di belakang foto -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-amber-600 to-amber-300 rounded-[2rem] transform rotate-3 scale-105 opacity-50 blur-lg"></div>
+                    
+                    <!-- Container Foto -->
+                    <div class="relative w-full h-full rounded-[2rem] overflow-hidden border-2 border-zinc-700 photo-glow bg-zinc-800">
+                        <!-- Pastikan nama file foto di bawah ini sama persis dengan nama file aslimu -->
+                        <img src="profil.jpg" alt="Foto Profil Avrilistianto" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+                    </div>
+
+                    <!-- Badge Mengambang -->
+                    <div class="absolute -bottom-6 -left-6 bg-cardbg border border-zinc-700 p-4 rounded-xl shadow-xl flex gap-3 z-10 hidden sm:flex">
+                        <span class="px-3 py-1 bg-red-500/10 text-red-400 text-xs font-bold rounded">Laravel</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-xs font-bold rounded">Next.js</span>
+                        <span class="px-3 py-1 bg-amber-500/10 text-amber-400 text-xs font-bold rounded">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-zinc-900/40 border-t border-zinc-800/60">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-3 text-white">
+                <i class="fas fa-user-circle text-primary"></i> Tentang Saya
+            </h2>
+            <p class="text-zinc-300 leading-relaxed text-lg">
+                Saya adalah mahasiswa tingkat akhir jurusan Teknologi Informasi dengan minat mendalam pada rekayasa perangkat lunak, pengembangan web (frontend & backend), serta manajemen basis data. Terbiasa membangun aplikasi fungsional menggunakan teknologi modern seperti PHP/Laravel, JavaScript/TypeScript, Next.js, serta pengelolaan basis data SQL yang optimal.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3 text-white">
+                <i class="fas fa-tools text-primary"></i> Keahlian & Tech Stack
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Skill Card 1 -->
+                <div class="p-8 bg-cardbg rounded-2xl border border-zinc-800 hover:border-zinc-600 transition">
+                    <h3 class="font-bold text-amber-400 mb-6 text-xl flex items-center"><i class="fas fa-code mr-3"></i>Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">HTML / CSS</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">JavaScript / TS</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">Next.js</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">Tailwind CSS</span>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="p-8 bg-cardbg rounded-2xl border border-zinc-800 hover:border-zinc-600 transition">
+                    <h3 class="font-bold text-amber-500 mb-6 text-xl flex items-center"><i class="fas fa-server mr-3"></i>Backend & DB</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">PHP / Laravel</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">Express.js</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">MySQL / PostgreSQL</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">Prisma ORM</span>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="p-8 bg-cardbg rounded-2xl border border-zinc-800 hover:border-zinc-600 transition">
+                    <h3 class="font-bold text-amber-600 mb-6 text-xl flex items-center"><i class="fas fa-wrench mr-3"></i>Tools & Lainnya</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">Git & GitHub</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">Docker</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">Zod / JWT</span>
+                        <span class="px-3 py-1.5 bg-zinc-800/80 text-zinc-300 text-sm font-medium rounded-lg border border-zinc-700/50">Manual Testing & QA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-zinc-900/40 border-t border-zinc-800/60">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3 text-white">
+                <i class="fas fa-laptop-code text-primary"></i> Proyek Unggulan
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-cardbg rounded-2xl p-8 border border-zinc-800 flex flex-col justify-between group hover:border-primary/50 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-primary transition">GrowGarden</h3>
+                            <i class="fab fa-laravel text-2xl text-red-500/50"></i>
+                        </div>
+                        <p class="text-zinc-400 text-base mb-6 leading-relaxed">Platform e-commerce tanaman, benih, dan pupuk lengkap dengan keranjang belanja, riwayat pesanan, serta sistem manajemen admin yang komprehensif.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Laravel</span>
+                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Tailwind CSS</span>
+                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">MySQL</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Avrlst" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-primaryHover text-sm font-bold uppercase tracking-wider">
+                        Lihat Source Code <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-cardbg rounded-2xl p-8 border border-zinc-800 flex flex-col justify-between group hover:border-primary/50 transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-primary transition">Event Ticketing</h3>
+                            <i class="fab fa-react text-2xl text-cyan-500/50"></i>
+                        </div>
+                        <p class="text-zinc-400 text-base mb-6 leading-relaxed">Platform tiket acara berbasis monorepo dengan frontend modern, autentikasi terjamin, dan validasi data terstruktur menggunakan backend terpisah.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Next.js</span>
+                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Express TS</span>
+                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Prisma</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Avrlst" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-primaryHover text-sm font-bold uppercase tracking-wider">
+                        Lihat Source Code <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center bg-cardbg p-10 rounded-[2rem] border border-zinc-800">
+            <h2 class="text-3xl font-bold mb-4 text-white">Mari Berkolaborasi!</h2>
+            <p class="text-zinc-400 mb-10 max-w-lg mx-auto text-lg">Terbuka untuk kesempatan magang, kolaborasi proyek web, maupun diskusi seru seputar teknologi IT dan Database.</p>
+            <div class="inline-flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
+                <a href="mailto:avrilo252627@gmail.com" class="px-8 py-4 bg-primary hover:bg-primaryHover font-bold rounded-xl transition text-white flex items-center justify-center gap-3 w-full sm:w-auto shadow-lg shadow-amber-900/30">
+                    <i class="fas fa-envelope text-lg"></i> avrilo252627@gmail.com
+                </a>
+                <a href="https://github.com/Avrlst" target="_blank" class="px-8 py-4 bg-zinc-800 hover:bg-zinc-700 font-bold rounded-xl transition text-zinc-200 border border-zinc-700 flex items-center justify-center gap-3 w-full sm:w-auto">
+                    <i class="fab fa-github text-lg"></i> Kunjungi GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-zinc-800 text-center text-sm text-zinc-500 bg-darkbg">
+        <p>&copy; 2026 Avrilistianto Ananda Nabil. Crafted with HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
