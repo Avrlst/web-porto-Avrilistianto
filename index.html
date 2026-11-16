@@ -111,6 +111,15 @@
                 Saya adalah mahasiswa tingkat akhir jurusan Teknologi Informasi dengan minat mendalam pada rekayasa perangkat lunak, pengembangan web (frontend & backend), serta manajemen basis data. Terbiasa membangun aplikasi fungsional menggunakan teknologi modern seperti PHP/Laravel, JavaScript/TypeScript, Next.js, serta pengelolaan basis data SQL yang optimal.
             </p>
         </div>
+         <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 flex items-center gap-3 text-white">
+                <i class="fas fa-user-circle text-primary"></i> Pengalaman Organisasi
+            </h2>
+            <p class="text-zinc-300 leading-relaxed text-lg">
+                Saya pernah aktif dalam organisasi kampus,yaitu UKM MUSIK (Unit Kegiatan Mahasiswa Seni Musik) sebagai anggota divisi Perlengkapan. Dalam peran ini, saya bertanggung jawab untuk mengelola dan merawat peralatan musik, memastikan semua perlengkapan tersedia dan berfungsi dengan baik untuk mendukung kegiatan organisasi. Pengalaman ini telah mengasah kemampuan saya dalam manajemen inventaris, koordinasi tim, serta pemecahan masalah secara efektif.
+                Kegiatan yang pernah saya ikuti yaitu mejadi panitia dalam acara music on cafe dan juga acara LDK (Latihan Dasar Kepemimpinan) yang diadakan oleh UKM MUSIK.
+            </p>
+        </div>
     </section>
 
     <!-- Skills Section -->
@@ -155,71 +164,88 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-24 px-6 bg-zinc-900/40 border-t border-zinc-800/60">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-bold mb-12 flex items-center gap-3 text-white">
-                <i class="fas fa-laptop-code text-primary"></i> Proyek Unggulan
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-cardbg rounded-2xl p-8 border border-zinc-800 flex flex-col justify-between group hover:border-primary/50 transition duration-300">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-white group-hover:text-primary transition">GrowGarden</h3>
-                            <i class="fab fa-laravel text-2xl text-red-500/50"></i>
-                        </div>
-                        <p class="text-zinc-400 text-base mb-6 leading-relaxed">Platform e-commerce tanaman, benih, dan pupuk lengkap dengan keranjang belanja, riwayat pesanan, serta sistem manajemen admin yang komprehensif.</p>
-                        <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Laravel</span>
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Tailwind CSS</span>
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">MySQL</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Avrlst" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-primaryHover text-sm font-bold uppercase tracking-wider">
-                        Lihat Source Code <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-                <!-- Project 2 -->
-                <div class="bg-cardbg rounded-2xl p-8 border border-zinc-800 flex flex-col justify-between group hover:border-primary/50 transition duration-300">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-white group-hover:text-primary transition">Event Ticketing</h3>
-                            <i class="fab fa-react text-2xl text-cyan-500/50"></i>
-                        </div>
-                        <p class="text-zinc-400 text-base mb-6 leading-relaxed">Platform tiket acara berbasis monorepo dengan frontend modern, autentikasi terjamin, dan validasi data terstruktur menggunakan backend terpisah.</p>
-                        <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Next.js</span>
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Express TS</span>
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Prisma</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Avrlst" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-primaryHover text-sm font-bold uppercase tracking-wider">
-                        Lihat Source Code <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+   <section id="proyek" class="max-w-6xl mx-auto px-6 py-16">
+    <!-- Semua kartu berada dalam 1 container grid yang sama -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Kartu 1: GrowGarden -->
+        <div class="flex flex-col justify-between bg-zinc-900/70 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/40 transition">
+        <div>
+            <div class="flex items-start justify-between gap-4 mb-4">
+            <h3 class="text-xl font-bold text-white">GrowGarden</h3>
+            <!-- Ikon Laravel -->
+            <span class="text-red-500 shrink-0"><!-- SVG Laravel --></span>
             </div>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            Platform e-commerce tanaman, benih, dan pupuk lengkap dengan keranjang belanja, riwayat pesanan, serta sistem manajemen admin yang komprehensif.
+            </p>
         </div>
-        <div class="bg-cardbg rounded-2xl p-8 border border-zinc-800 flex flex-col justify-between group hover:border-primary/50 transition duration-300">
-                    <div>
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold text-white group-hover:text-primary transition">3D AR Akuarium Interaktif</h3>
-                            <i class="fab fa-react text-2xl text-cyan-500/50"></i>
-                        </div>
-                        <p class="text-zinc-400 text-base mb-6 leading-relaxed">Aplikasi mobile Augmented Reality berbasis marker menggunakan Unity, Vuforia Engine, dan AR Foundation untuk merender ekosistem akuarium 3D secara real-time dengan interaksi sentuh (tap-to-interact & dynamic feeding).</p>
-                        <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Next.js</span>
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Express TS</span>
-                            <span class="text-xs px-3 py-1 bg-amber-500/10 text-amber-400 rounded-md border border-amber-500/20">Prisma</span>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Avrlst" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-primaryHover text-sm font-bold uppercase tracking-wider">
-                        Lihat Source Code <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+        <div>
+            <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">Laravel</span>
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">Tailwind CSS</span>
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">MySQL</span>
             </div>
+            <a href="#" class="inline-flex items-center gap-2 text-xs font-bold tracking-wider text-amber-500 hover:text-amber-400 uppercase">
+            Lihat Source Code <span>&rarr;</span>
+            </a>
         </div>
+        </div>
+
+        <!-- Kartu 2: Event Ticketing -->
+        <div class="flex flex-col justify-between bg-zinc-900/70 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/40 transition">
+        <div>
+            <div class="flex items-start justify-between gap-4 mb-4">
+            <h3 class="text-xl font-bold text-white">Event Ticketing</h3>
+            <!-- Ikon React -->
+            <span class="text-cyan-400 shrink-0"><!-- SVG React --></span>
+            </div>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            Platform tiket acara berbasis monorepo dengan frontend modern, autentikasi terjamin, dan validasi data terstruktur menggunakan backend terpisah.
+            </p>
+        </div>
+        <div>
+            <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">Next.js</span>
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">Express TS</span>
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">Prisma</span>
+            </div>
+            <a href="#" class="inline-flex items-center gap-2 text-xs font-bold tracking-wider text-amber-500 hover:text-amber-400 uppercase">
+            Lihat Source Code <span>&rarr;</span>
+            </a>
+        </div>
+        </div>
+
+        <!-- Kartu 3: 3D AR Akuarium Interaktif (Sudah dirapikan) -->
+        <div class="flex flex-col justify-between bg-zinc-900/70 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/40 transition">
+        <div>
+            <div class="flex items-start justify-between gap-4 mb-4">
+            <h3 class="text-xl font-bold text-white">3D AR Akuarium Interaktif</h3>
+            <!-- Ikon Kubus 3D/AR pengganti ikon React -->
+            <svg class="w-6 h-6 text-amber-400 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+            </svg>
+            </div>
+            <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            Aplikasi mobile Augmented Reality berbasis marker menggunakan Unity, Vuforia Engine, dan AR Foundation untuk merender ekosistem akuarium 3D secara real-time dengan interaksi sentuh (tap-to-interact &amp; dynamic feeding).
+            </p>
+        </div>
+        <div>
+            <!-- Tech stack disesuaikan dengan proyek AR -->
+            <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">Unity</span>
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">Vuforia Engine</span>
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">AR Foundation</span>
+            <span class="px-3 py-1 text-xs font-medium rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">C#</span>
+            </div>
+            <a href="https://github.com/Avrlst/ar-3d-aquarium" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold tracking-wider text-amber-500 hover:text-amber-400 uppercase">
+            Lihat Source Code <span>&rarr;</span>
+            </a>
+        </div>
+        </div>
+
+    </div>
     </section>
-    
 
 
     <!-- Contact Section -->
